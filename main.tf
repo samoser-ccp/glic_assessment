@@ -14,6 +14,16 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-east-1
+}
 
+#EC2 details
+
+resource "aws_instance" "instance1" {
+  ami = ami-090fa75af13c156b4"
+  instance_type = "t2.micro"
+  tags = {
+    name "linux"
   }
 }
