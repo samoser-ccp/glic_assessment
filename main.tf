@@ -9,7 +9,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicor/aws"
-      version = "~> 3.74.2"
+      version = "~> version = "5.54.1""
     }
   }
 }
@@ -21,7 +21,7 @@ provider "aws" {
 #EC2 details
 
 resource "aws_instance" "instance1" {
-  ami = ami-090fa75af13c156b4"
+  ami = "ami-08a0d1e16fc3f61ea"
   instance_type = "t2.micro"
   tags = {
     name "linux"
