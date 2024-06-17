@@ -26,4 +26,5 @@ resource "aws_instance" "instance1" {
   tags = {
     name "linux"
   }
+ user_data                   = file("bootstrap.sh")
 }
